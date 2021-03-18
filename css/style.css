@@ -1,0 +1,56 @@
+body {
+    background: url("/images/drumset.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.key {
+    padding: 0.5rem;
+    text-align: center;
+    width: 4rem;
+    height: 3.5rem;
+    border: solid 1px white;
+    color: white;
+    margin-right: 2rem;
+    transition: 0.1s;
+}
+
+.playing {
+    box-shadow: 1px 1px 17px 11px red;
+    -moz-box-shadow: 1px 1px 17px 11px red;
+    -webkit-box-shadow: 1px 1px 17px 11px red;
+    -o-box-shadow: 1px 1px 17px 11px red;
+}
+
+.key:last-child {
+    margin: 0;
+}
+
+.key kbd {
+    font-size: 2rem;
+}
+
+.sound {
+    margin-top: 0.5rem;
+    display: block;
+    color: yellow;
+}
+
+@media (min-width: 480px) and (max-width: 786px) {
+
+    .keys {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 3rem;
+    }
+
+    .key {
+        margin-right: 0;
+    }
+
+}
